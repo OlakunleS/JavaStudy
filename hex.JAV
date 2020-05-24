@@ -1,5 +1,5 @@
 public class InputHex {
-	public static int main() {
+	public static void main() {
 		Scanner input = new Scanner(System.in);  //Scanner 
 		System.out.println("Enter Number");
 		int decimal = input.nextInput();
