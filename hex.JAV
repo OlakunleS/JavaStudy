@@ -4,8 +4,9 @@ public class InputHex {
 		System.out.println("Enter Number");
 		int decimal = input.nextInput();
 
-		if (decimal < 0 || decimal >= 16)
+		if (decimal < 0)|| (decimal > 15){
 			system.out.printIn(Invalid Input);
+			}
 		char hex;
 		switch (decimal) {
 		case 10: 
