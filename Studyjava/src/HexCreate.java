@@ -1,16 +1,15 @@
 import java.util.Scanner;
 
-public class hexCreate {
+public class HexCreate { //class name always starts with Cap
 	public static void main (String[] args){
 		Scanner input = new Scanner(System.in);  //Scanner 
 		System.out.println("Enter Number");
 		int decimal = input.nextInt();
 	
-		if (decimal < 0 )
-		{
+		if (decimal < 0 ) { //keep bracket formula consistent
 			System.out.println("Invalid Input");
 		}
-		while() {
+		while(????) {//whats your condition
 			int i = i % 16;
 			
 			switch (decimal) {
