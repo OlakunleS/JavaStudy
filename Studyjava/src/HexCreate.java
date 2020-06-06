@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HexCreate { //class name always starts with Cap
+public class HexCreate { // class name always starts with Cap
 	public static void main (String[] args){
 		Scanner input = new Scanner(System.in);  //Scanner 
 		System.out.println("Enter Number");
@@ -9,9 +9,8 @@ public class HexCreate { //class name always starts with Cap
 		if (decimal < 0 ) { //keep bracket formula consistent
 			System.out.println("Invalid Input");
 		}
-		while(????) {//whats your condition
-			int i = i % 16;
-			
+		
+		decimal = decimal % 16;	
 			switch (decimal) {
 			case 10: 
 				System.out.println("A");
@@ -32,13 +31,10 @@ public class HexCreate { //class name always starts with Cap
 				System.out.println("F");
 				break;
 			default:
-				System.out.println("Couldn't read decimal input.");
+				System.out.println("decimal is less than 10");
 			}
-			i++;
-		}
 		
 		
-		System.out.println("The hex is " + decimal);  // Output information
+		System.out.println("Your input has been shortend to " + decimal);  // Output information
 	}
 }
-
