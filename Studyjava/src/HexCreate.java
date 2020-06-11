@@ -5,36 +5,43 @@ public class HexCreate { // class name always starts with Cap
 		Scanner input = new Scanner(System.in);  //Scanner 
 		System.out.println("Enter Number");
 		int decimal = input.nextInt();
-	
 		if (decimal < 0 ) { //keep bracket formula consistent
 			System.out.println("Invalid Input");
 		}
+		String hex = "";
+		String hexanswer = "";
 		
-		decimal = decimal % 16;	
-			switch (decimal) {
+		for (int i = decimal; i != 0;) {
+			int remainder = i % 16;
+			
+			hex = hex + remainder;
+			i = i / 16;
+			switch (remainder) {
 			case 10: 
-				System.out.println("A");
+				hex = ("A");
 				break;
 			case 11: 
-				System.out.println("B");
+				hex = ("B");
 				break;
 			case 12: 
-				System.out.println("C");
+				hex = ("C");
 				break;
 			case 13: 
-				System.out.println("D");
+				hex = ("D");
 				break;
 			case 14: 
-				System.out.println("E");
+				hex = ("E");
 				break;
 			case 15: 
-				System.out.println("F");
+				hex = ("F");
 				break;
 			default:
-				System.out.println("decimal is less than 10");
-			}
+		}
 		
-		
-		System.out.println("Your input has been shortend to " + decimal);  // Output information
+		}
+		for(int j = 0; j < hex.length() ; j++) {
+			hexanswer = hex.charAt(j) + hexanswer;
+		}
+		System.out.println("The hex is " +hexanswer); // Output information
 	}
 }
